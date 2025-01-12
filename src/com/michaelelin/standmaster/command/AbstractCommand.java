@@ -24,7 +24,7 @@ public abstract class AbstractCommand implements StandMasterCommand {
     protected AbstractCommand(String name, String description) {
         this.name = name;
         this.description = description;
-        aliases = new ArrayList<String>();
+        aliases = new ArrayList<>();
     }
 
     @Override
