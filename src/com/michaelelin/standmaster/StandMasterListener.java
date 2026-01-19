@@ -45,7 +45,8 @@ public class StandMasterListener implements Listener {
                 Location loc = event.getLocation();
                 if (p.location.getWorld() == loc.getWorld()
                         && p.location.getBlockX() == loc.getBlockX()
-                        && p.location.getBlockY() == loc.getBlockY()
+                        && (p.location.getBlockY() == loc.getBlockY()
+                        || p.location.getBlockY() - 1 == loc.getBlockY())
                         && p.location.getBlockZ() == loc.getBlockZ()
                         && p.time == loc.getWorld().getFullTime()) {
                     PlayerConfiguration settings = StandMasterPlugin.getInstance()
